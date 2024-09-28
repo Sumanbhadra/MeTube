@@ -61,7 +61,7 @@ export default function Playvideo({ videoId }) {
                 Subscribe
               </span>
             </div>
-            <div className="flex gap-1 justify-between items-center md:mt-0 mt-2">
+            <div className="flex gap-1 justify-between items-center md:mt-0 mt-2 ">
               <span className="flex text-nowrap gap-2 md:px-5 px-3 items-center bg-gray-200 p-3 rounded-full cursor-pointer">
                 <AiOutlineLike />
                 {dataCovertor(videoDetails.statistics.likeCount)} |
@@ -75,7 +75,7 @@ export default function Playvideo({ videoId }) {
                 <LiaDownloadSolid />
                 Download
               </span>
-              <span className=" bg-gray-200 p-3 px-5 rounded-full cursor-pointer">
+              <span className=" bg-gray-200 p-3 px-4 rounded-full cursor-pointer">
                 <IoIosMore className="mt-1" />
               </span>
             </div>
@@ -96,7 +96,7 @@ export default function Playvideo({ videoId }) {
             </p>
           </div>
           <div className="flex items-center justify-start gap-10 my-5">
-            <span className="text-3xl font-semibold">
+            <span className="md:text-3xl text-xl font-semibold">
               {videoDetails.statistics.commentCount} Comments
             </span>{" "}
             <span className="flex text-xl items-center gap-2">
