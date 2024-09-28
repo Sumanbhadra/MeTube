@@ -29,7 +29,7 @@ const Home = () => {
   useEffect(() => {
     fetchApiData();
   }, [categoryId]);
-
+  console.log(apiData)
   return (
     <div className="flex mt-16 ">
       <Sidebar />

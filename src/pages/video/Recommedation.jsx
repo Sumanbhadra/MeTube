@@ -23,7 +23,7 @@ export default function Recommedation({ categoryId }) {
   useEffect(() => {
     fetchApiData();
   }, [categoryId]);
-  return <div className="mt-20 mx-5 lg:mx-0">
+  return <div className="mt-20 mx-2 lg:mx-0">
     <div className="flex-col gap-4">
       <RecommendationCategory/>
           {apiData.map((item, index) => (

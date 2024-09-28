@@ -9,7 +9,7 @@ export default function VideoCard({ item }) {
       <Link to={`/video/${item.snippet.categoryId}/${item.id}`}>
         <img
           className="rounded-lg w-full"
-          src={item.snippet.thumbnails.standard.url}
+          src={item?.snippet?.thumbnails?.maxres?.url || item?.snippet?.thumbnails?.medium?.url}
           alt={item.snippet.title}
         />
         <h1 className="font-semibold p-1 line">{item.snippet.title}</h1>

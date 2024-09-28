@@ -48,7 +48,7 @@ export default function Playvideo({ videoId }) {
           <div className="flex md:flex-row flex-col gap-2 md:text-xl mb-5 ">
             <div className="flex items-center justify-start gap-2">
               <div className="w-[60px] aspect-square bg-gray-300 rounded-full"></div>
-              <div className="flex flex-col bg-red-300">
+              <div className="flex flex-col ">
                 <span className="text-xl font-semibold ">
                   {videoDetails.snippet.channelTitle}{" "}
                 </span>

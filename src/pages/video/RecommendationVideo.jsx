@@ -4,20 +4,27 @@ import { Link } from "react-router-dom";
 export default function Recommedationvideo({ item }) {
   return (
     <>
-        <div className="flex gap-2">
-        <img
-          className="rounded-lg w-1/2 h-4/5 mb-3"
-          src={item.snippet.thumbnails.standard.url}
-          alt={item.snippet.title}
-        />
-        <div className="">
-        <p className="font-semibold text-sm p-1 text-wrap line-clamp-2 ">{item.snippet.title}</p>
-        <p className="p-1 ">{item.snippet.channelTitle}</p>
+      <div className="flex flex-row gap-2 w-full mb-4">
+        <div className="w-2/5">
+          <Link
+            to={`/video/${item.snippet.categoryId}/${item.id}`}
+            className=""
+          >
+            <img
+              className="rounded-lg "
+              src={item.snippet.thumbnails.maxres.url}
+              alt={item.snippet.title}
+            />
+          </Link>
         </div>
-        </div>
-   
 
-      
+        <div className="w-3/5">
+          <p className="font-semibold text-sm p-1 text-wrap line-clamp-2 ">
+            {item.snippet.title}
+          </p>
+          <p className="p-1 ">{item.snippet.channelTitle}</p>
+        </div>
+      </div>
     </>
   );
 }
