@@ -2,7 +2,7 @@ import React from 'react'
 import VideoCard from './VideoCard'
 
 export default function Feed({apiData}) {
-    console.log(apiData)
+  
   return (
     <div>
       <div className="flex flex-wrap  items-stretch justify-between">

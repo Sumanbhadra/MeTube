@@ -6,7 +6,6 @@ import { API_KEY } from "../../data.js";
 import Feed from "./Feed.jsx";
 import { Outlet } from "react-router-dom";
 
-
 const Home = () => {
   const [apiData, setApiData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -29,7 +28,7 @@ const Home = () => {
   useEffect(() => {
     fetchApiData();
   }, [categoryId]);
-  console.log(apiData)
+
   return (
     <div className="flex mt-16 ">
       <Sidebar />
